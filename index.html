@@ -5,22 +5,22 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
+      <a>
+        <img src="https://via.placeholder.com/108x18" alt="Логотип магазина Техномарт" width="108" height="18">
+      </a>
       <form action="#" method="POST">
         <input type="search" placeholder="Поиск:">
       </form>
+      <a href="#">Закладки:0</a> 
+      <a href="#">Корзина:0</a>
+      <a href="#">Оформить заказ</a>
       <i>Интернет-магазин строительных материалов и инструментов для ремонта</i>
-      <a href="tel:+78125550555">+7(812)555-05-55</a>
+      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       <address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <nav>
-        <a>
-          <img src="https://via.placeholder.com/108x18" alt="Логотип магазина Техномарт" width="108" height="18">
-        </a>
-        <a href="#">Закладки:0</a> 
-        <a href="#">Корзина:0</a>
-        <a href="#">Оформить заказ</a>
-        <button type="button">Войти</button>
-        <button type="button">Регистрация</button>
+      <button type="button">Войти</button>
+      <button type="button">Регистрация</button>
+      <nav class="main-nav">
         <ul>
           <li>
             <a href="#">
@@ -86,36 +86,76 @@
             <a href="#">бесплатно</a>
           </li>
         </ul>
-        <h3>Перфораторы</h3>
-        <p>настоящие мужские игрушки</p>
-        <a href="catalog.html">Открыть каталог</a>
+        <ul>
+          <li>
+            <div>
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
+          </li>                       
+          <li>
+            <div>
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a href="catalog.html">Открыть каталог</a>
+            </div>            
+          </li>           
+        </ul>
         <button class="button" disabled>Назад</button>
-        <button class="button">Вперед</button>              
+        <button class="button">Вперед</button>
       </section>
       <section class="goods">
         <h2>Популярные товары </h2>
         <a href="#">Все популярные товары</a>             
         <ul>
-        <li>
-          <h3>Перфоратор BOSCH BFG 9000</h3>
-          <s>32500 Р. </s>
-          <b>25500 Р. </b>              
+          <li>
+            <a href="#">
+                <h3>Перфоратор BOSCH BFG 9000</h3>
+                <p>
+                    <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
+                </p>
+            </a>
+            <p>
+                <s>32500 Р. </s><br>
+                <button type="button">25500 Р.</button>
+            </p>
         </li>
         <li>
-          <h3>Перфоратор BOSCH BFG 3000</h3>
-          <s>22500 Р.</s>
-          <b>15500 Р.</b>                 
-        </li>
-        <li>
-          <h3>Перфоратор BOSCH BFG 6000</h3>
-          <s>30500 Р.</s>
-          <b>25500 Р.</b>       
-        </li>
-        <li>
+          <a href="#">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <p>
+                  <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+              </p>
+          </a>
+          <p>
+              <s>22500 Р. </s><br>
+              <button type="button">15500 Р.</button>
+          </p>
+      </li>
+      <li>
+        <a href="#">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <p>
+                <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+            </p>
+        </a>
+        <p>
+            <s>30500 Р. </s><br>
+            <button type="button">25500 Р.</button>
+        </p>
+    </li>
+    <li>
+      <a href="#">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <s>22500 Р.</s>
-          <b>15500 Р.</b>   
-        </li>
+          <p>
+              <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
+          </p>
+      </a>
+      <p>
+          <button type="button">12500 Р.</button>
+      </p>
+  </li>
       </ul>      
       </section>
       <section class="brands">
@@ -155,8 +195,24 @@
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <a href="#">Заблудились? Напишите нам!</a>             
       </section>
+      <section class="write-us">
+        <h2>Напишите нам</h2>
+        <form method="get" action="#">
+          <label>Ваше имя:
+          <input type="text" placeholder="Имя Фамилия" name="name">
+        </label>
+        <label>Ваш e-mail:
+          <input type="text" placeholder="email@example.com" name="e-mail">
+        </label>
+        <label>Текст письма:
+          <input type="textarea" placeholder="В свободной форме" name="message">
+        </label>
+        <button class="submit">Отправить</button>
+        </form>
+        <button class="button">Закрыть</button>
+      </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <a href="#"><img src="https://via.placeholder.com/220x68" width="220" height="68" alt="Логотип Техномарта"></a>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
