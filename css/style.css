@@ -1,0 +1,489 @@
+/* Variables */
+
+:root {
+--basic-blue: #32425C;
+--basic-red: #EE3643;
+--basic-green: #63A63E;
+--basic-grey: #F9F5F0;
+--basic-greylight: rgba(197,197,197,0.3);
+--basic-grey2: rgba(0, 0, 0, 0.0001);
+--basic-orange: #FFBF47;
+--basic-white: #ffffff;
+--basic-black: #000000;
+
+--special-light-blue:#3BBCE3;
+--special-pink: #DC91D8;
+--special-green: #8ED78F;
+--special-blue: #293449;
+--special-orange:  #FFD180;
+--special-blue2:  linear-gradient(0deg, #212A3A, #212A3A);
+--special-black: #161D29;
+--special-grey: rgba(169,169,169,0.3);
+--special-greylight: #F1F5F7;
+--special-red: #CA2C37;
+--special-darkred: #BA2732;
+}
+
+body {
+  min-width: 1200px;
+  margin:0;
+  padding:0;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*Main-navigation*/
+
+.upper-navigation, .main-navigation {
+  background-color: var(--basic-blue);
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+/*Навигационные ссылки*/
+
+.upper-navigation a,
+.main-navigation-item a,
+.footer-navigation-item a,
+.social-list-item a {
+  color: var(--basic-white);
+}
+
+.main-navigation-item a:hover {
+  background-color: var(--special-blue);
+}
+
+.main-navigation-item a:focus {
+  opacity: 0.5;
+  background-color:#1D2739;
+}
+
+i {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.contacts-phone {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.header-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-cabinet {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.main-navigation-wrapper {
+  background: rgba(0, 0, 0, 0.0001);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-navigation-list,
+.features-list,
+.features-slider,
+.goods-list,
+.brands-list,
+.services-list,
+.footer-navigation-list,
+.additional-list,
+.social-list {
+  list-style:none;
+}
+
+/*Закладки, поиск, корзина*/
+
+.purchase:focus {
+  background-color: var(--special-black);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+.search:hover {
+color: var(--basic-black);
+}
+
+.search:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+/*Личный кабинет*/
+
+.user-cabinet {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-cabinet:hover {
+  color: var(--basic-red);
+}
+
+.user-cabinet:focus {
+color: var(--basic-greylight);
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*Материалы, инструменты, техника и т.д.*/
+
+.feature-list-item:nth-child(1) {
+background-color: var(--basic-orange);
+}
+
+.feature-list-item:nth-child(2) {
+  background-color: var(--special-light-blue);
+}
+
+.feature-list-item:nth-child(3) {
+  background-color: var(--special-pink);
+}
+
+.feature-list-item:nth-child(4) {
+  background-color: var(--special-green);
+}
+
+.feature-list-item:nth-child(5) {
+  background-color: #FFC047;
+}
+
+.feature-list-item h3 {
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/*Не получается сделать базовое состояние*/
+
+.feature-list-item a {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background: rgba(255,255,255,0.3);
+}
+
+.feature-list-item a:hover {
+  background-color: var(--basic-greylight);
+}
+
+.feature-list-item a:focus {
+  background-color: var(--special-grey);
+}
+
+/*Слайдер*/
+
+.slider-item-1,
+.slider-item-2 {
+  background-color: var(--basic-blue); /*Цвет временный*/
+}
+
+.slider-item h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.slider-item p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+/*Заголовки на cuprum*/
+.goods h2,
+.brands h2,
+.service-list-item h3 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+}
+
+.popular {
+  background-color: var(--basic-grey);
+}
+
+.goods-list-item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+/*Кнопки с ценой, красные все*/
+.open-button,
+.purchase-button {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-align: center;
+}
+.open-button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.open-button:hover {
+  background-color: var(--special-red);
+}
+
+.open-button:focus {
+  background-color: var(--special-darkred);
+}
+
+.purchase-button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+/*Карточка с товаром*/
+
+.goods-list-item h3 {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+.goods-list-item s {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--special-grey);
+}
+
+/*не получилось прописать в цене семейство шрифтов pt sans*/
+
+/*Сервисы*/
+
+.services {
+  background-color: var(--special-greylight);
+}
+
+.services h2 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.service-list-item p,
+.services p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.services-button {
+  background: var(--basic-blue);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  color: var(--basic-white);
+}
+
+.services-button:hover {
+  background: var(--special-blue);
+}
+
+.services-button:focus {
+  background: var(--basic-white);
+  color: var(--basic-black);
+}
+
+/*Бренды*/
+
+.brand-list-item a:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.brand-list-item a:focus {
+  background: var(--basic-white);
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+
+/*Про нас */
+
+.about-us h2,
+.contacts h2 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about-us p,
+.contacts p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.partners-list-item {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/*Footer*/
+
+.navigation-footer {
+  background-color: var(--basic-blue);
+}
+
+.footer-copyright {
+  background-color: var(--special-blue);
+}
+
+.footer-address {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #F3F7F9;
+}
+
+.footer-navigation-item {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #F1F5F7;
+}
+
+.additional-list-item a {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--special-orange);
+}
+
+.additional-list-item a:hover,
+.footer-navigation-item a:hover {
+  text-decoration: underline;
+}
+
+.additional-list-item a:focus,
+.footer-navigation-item a:focus {
+  opacity: 0.5;
+}
+
+.copyright {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.copyright a {
+  color: var(--special-orange);
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.copyright a:focus {
+  color: var(--special-darkred);
+}
+
+.social-list-item a {
+  background: linear-gradient(0deg, #212A3A, #212A3A);
+}
+
+.social-list-item a:hover,
+.social-list-item a:focus {
+  background: var(--basic-red);
+}
+
+/*Форма feedback*/
+
+.feedback-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.feedback-item-input {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #a9a9a9;
+  border: 2px solid #C5C5C5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.feedback-bottom {
+  background-color: #f4f4f4;
+}
