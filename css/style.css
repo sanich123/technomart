@@ -186,7 +186,6 @@ background-color: var(--basic-orange);
   line-height: 30px;
 }
 
-/*Не получается сделать базовое состояние*/
 
 .feature-list-item a {
   text-transform: uppercase;
@@ -229,7 +228,8 @@ background-color: var(--basic-orange);
 /*Заголовки на cuprum*/
 .goods h2,
 .brands h2,
-.service-list-item h3 {
+.service-list-item h3,
+.wrapper-h2 h1 {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -486,4 +486,54 @@ background-color: var(--basic-orange);
 
 .feedback-bottom {
   background-color: #f4f4f4;
+}
+
+
+/*Catalog*/
+
+.wrapper-h2 {
+  background-color: #f2f6f8;
+}
+
+.breadcrumbs-list {
+  list-style:none;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.filters, .perforators-list {
+  font-family: PT Sans;
+}
+
+.filters h2 {
+  font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+color: var(--basic-black);
+background-color: #F7F3EC;
+}
+
+.brands-checkbox-list,
+.brands-radio-list,
+.sort-list,
+.perforators-list,
+.page-list {
+  list-style: none;
+}
+
+.filters-form legend {
+  font-family: PT Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 17px;
+line-height: 30px;
+text-transform: uppercase;
+
+color: #000000;
 }
