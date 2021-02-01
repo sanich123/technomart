@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
@@ -78,8 +78,8 @@
               <a href="index.html">
                   Главная
                 </a>
-            </li class="breadcrumbs-list-item">
-            <li>
+            </li>
+            <li class="breadcrumbs-list-item">
                 <a href="#">
                     Каталог
                 </a>
@@ -90,7 +90,9 @@
                 </a>
             </li>
             <li class="breadcrumbs-list-item">
-            Перфораторы
+              <a>
+                Перфораторы
+              </a>
             </li>
       </ul>
 
@@ -104,9 +106,11 @@
                     <legend>
                         Цена:
                     </legend>
-                    <input type="range" min="0" max="30000" step="1000" value="20000">
-                    <input type="number" placeholder="0"> &mdash;
-                    <input type="number" placeholder="30000">
+                    <div class="price-range">
+                      <input class="price" type="range" min="0" max="30000" step="1000" value="20000">
+                    </div>
+                    <input class="price" type="number" placeholder="0"> &mdash;
+                    <input class="price" type="number" placeholder="30000">
                 </fieldset>
                 <fieldset>
                     <legend>
@@ -114,23 +118,23 @@
                     </legend>
                     <ul class="brands-checkbox-list">
                         <li class="brands-checkbox-list-item">
-                            <input type="checkbox" id="filter-bosch" name="bosch" checked>
+                            <input class="brands-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
                             <label for="filter-bosch">Bosch</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input type="checkbox" id="filter-interscol" name="interscol">
+                            <input class="brands-checkbox" type="checkbox" id="filter-interscol" name="interscol">
                             <label for="filter-interscol">Интерскол</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input type="checkbox" id="filter-makita" name="makita" checked>
+                            <input class="brands-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
                             <label for="filter-makita">Makita</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input type="checkbox" id="filter-dewalt" name="dewalt">
+                            <input class="brands-checkbox" type="checkbox" id="filter-dewalt" name="dewalt">
                             <label for="filter-dewalt">Dewalt</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input type="checkbox" id="filter-hitachi" name="hitachi">
+                            <input class="brands-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
                             <label for="filter-hitachi">Hitachi</label>
                         </li>
                     </ul>
@@ -141,11 +145,11 @@
                     </legend>
                     <ul class="brands-radio-list">
                         <li>
-                            <input type="radio" id="filter-batteried" name="power-group" value="batteried">
+                            <input class="brands-radio" type="radio" id="filter-batteried" name="power-group" value="batteried">
                             <label for="filter-batteried">Аккумуляторные</label>
                         </li>
                         <li>
-                            <input type="radio" id="filter-wired" name="power-group" value="wired">
+                            <input class="brands-radio" type="radio" id="filter-wired" name="power-group" value="wired">
                             <label for="filter-wired">Сетевые</label>
                         </li>
                     </ul>
@@ -158,29 +162,29 @@
                 Сортировка:
             </h2>
             <ul class="sort-list">
-                <li>
+                <li class="sort-list-item">
                     <a href="#">
                         По цене
                     </a>
                 </li>
-                <li>
+                <li class="sort-list-item">
                     <a href="#">
                         По типу
                     </a>
                 </li>
-                <li>
+                <li class="sort-list-item">
                     <a href="#">
                         По функционалу
                     </a>
                 </li>
             </ul>
-            <button type="button">Вверх</button>
-            <button type="button">Вниз</button>
+            <button class="sort-list-button" type="button">Вверх</button>
+            <button class="sort-list-button" type="button">Вниз</button>
         </section>
-        <section class="perforators">
+        <section class="goods">
             <h2 class="visually-hidden">Список перфораторов</h2>
-            <ul class="perforators-list">
-                <li class="perforators-list-item">
+            <ul class="goods-list">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>
@@ -192,7 +196,7 @@
                         <button class="purchase-button" type="button">25500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>
@@ -204,12 +208,12 @@
                         <button class="purchase-button" type="button">25500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item-active">
+                <li class="goods-list-item-active">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>
-                          <button type="button">Купить</button>
-                          <button type="button">В закладки</button>
+                          <button class="accept-buy" type="button">Купить</button>
+                          <button class="to-bookmarks" type="button">В закладки</button>
                         </p>
                     </a>
                     <p>
@@ -217,7 +221,7 @@
                         <button class="purchase-button" type="button">15500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>
@@ -229,7 +233,7 @@
                         <button class="purchase-button" type="button">15500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>
@@ -241,7 +245,7 @@
                         <button class="purchase-button" type="button">25500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <p>
@@ -252,7 +256,7 @@
                         <button class="purchase-button" type="button">12500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <p>
@@ -264,7 +268,7 @@
                         <button class="purchase-button" type="button">15500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <p>
@@ -276,7 +280,7 @@
                         <button class="purchase-button" type="button">25500 Р.</button>
                     </p>
                 </li>
-                <li class="perforators-list-item">
+                <li class="goods-list-item">
                     <a href="#">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <p>
@@ -289,7 +293,7 @@
                 </li>
             </ul>
             <ul class="page-list">
-                <li class="page-list-item">
+                <li class="page-list-item active">
                     <a>1</a>
                 </li>
                 <li class="page-list-item">
@@ -401,7 +405,7 @@
       <section class="cart-popup">
         <p>Товар добавлен в корзину!</p>
         <button class="open-button" type="button">Оформить заказ</button>
-        <button type="button">Продолжить покупки</button>
+        <button class="continue-purchasing" type="button">Продолжить покупки</button>
       </section>
   </body>
   </html>

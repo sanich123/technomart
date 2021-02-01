@@ -495,7 +495,7 @@ background-color: var(--basic-orange);
   background-color: #f2f6f8;
 }
 
-.breadcrumbs-list {
+.breadcrumbs-list-item a {
   list-style:none;
   font-family: PT Sans;
   font-style: normal;
@@ -523,17 +523,194 @@ background-color: #F7F3EC;
 .brands-radio-list,
 .sort-list,
 .perforators-list,
-.page-list {
+.page-list,
+.breadcrumbs-list {
   list-style: none;
 }
 
 .filters-form legend {
   font-family: PT Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 17px;
-line-height: 30px;
-text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
 
-color: #000000;
+/*Чекбоксы*/
+/*Ввел отдельную обертку вокруг range, без размера пока, чтобы задать background-color*/
+.price,
+.price-range {
+  background-color: #F7F3EC;
+}
+
+.brands-checkbox,
+.brands-radio {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.brands-checkbox:hover,
+.brands-radio:hover {
+  background-color: #b5b5b5;
+}
+.brands-checkbox:active + label,
+.brands-radio:active + label {
+  opacity: 0.3;
+}
+
+.sort-list-item a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  opacity: 0.3;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #EE3643;
+}
+
+.sort-list-item a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort-list-item a:active {
+  color: var(--basic-red);
+  border: none;
+}
+
+.sort-list-button {
+  opacity: 0.3;
+}
+
+.sort-list-button:hover {
+  background: var(--basic-black);
+  opacity: 1;
+}
+
+.sort-list-button:active {
+  background: var(--basic-red);
+}
+
+.accept-buy {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background: #63A63E;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+}
+
+.accept-buy:hover {
+  background: #5FBB2D;
+}
+
+.accept-buy:focus {
+  background: #518534;
+}
+
+.to-bookmarks {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+  border: 3px solid #63A63E;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.to-bookmarks:hover {
+  border: 3px solid #32425C;
+}
+
+.to-bookmarks:focus {
+  opacity: 0.5;
+}
+
+/*Корзина popup*/
+
+.continue-purchasing {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background: var(--basic-white);
+}
+
+.cart-popup p {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.page-list-item a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.page-list-item a:hover {
+  border: 1px solid #C5C5C5;
+}
+
+.page-list-item a:focus {
+  border: 1px solid var(--basic-red);
+}
+
+.active a {
+  background: var(--basic-red);
+}
+
+.about-perforators h2 {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.about-perforators p {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
 }
