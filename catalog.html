@@ -114,8 +114,33 @@
         <div class="wrapper-h2">
           <h1>Перфораторы</h1>
         </div>
-        <section class="filters">
+
+          <div class="filters-block">
             <h2>Фильтр:</h2>
+            <h2>Сортировка:</h2>
+          <ul class="sort-list">
+              <li class="sort-list-item">
+                  <a href="#">
+                      По цене
+                  </a>
+              </li>
+              <li class="sort-list-item">
+                  <a href="#">
+                      По типу
+                  </a>
+              </li>
+              <li class="sort-list-item">
+                  <a href="#">
+                      По функционалу
+                  </a>
+                  <button class="sort-list-button" type="button">Вверх</button>
+                  <button class="sort-list-button" type="button">Вниз</button>
+              </li>
+            </ul>
+
+          </div>
+          <div class="filters-goods-wrapper container">
+          <section class="filters">
             <form class="filters-form"   method="get" action="https://echo.htmlacademy.ru/">
                 <fieldset>
                     <legend>
@@ -173,28 +198,6 @@
                     Показать
                 </button>
             </form>
-            <h2>
-                Сортировка:
-            </h2>
-            <ul class="sort-list">
-                <li class="sort-list-item">
-                    <a href="#">
-                        По цене
-                    </a>
-                </li>
-                <li class="sort-list-item">
-                    <a href="#">
-                        По типу
-                    </a>
-                </li>
-                <li class="sort-list-item">
-                    <a href="#">
-                        По функционалу
-                    </a>
-                </li>
-            </ul>
-            <button class="sort-list-button" type="button">Вверх</button>
-            <button class="sort-list-button" type="button">Вниз</button>
         </section>
         <section class="goods">
             <h2 class="visually-hidden">Список перфораторов</h2>
@@ -307,6 +310,9 @@
                     </p>
                 </li>
             </ul>
+
+        </section>
+      </div>
             <ul class="page-list">
                 <li class="page-list-item active">
                     <a>1</a>
@@ -321,8 +327,8 @@
                     <a href="#">Cледующая</a>
                 </li>
             </ul>
-        </section>
-        <article class="about-perforators">
+
+        <article class="about-perforators container">
             <h2>Пара слов о перфораторах</h2>
             <p>
                 Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверствий в кирпиче, бетоне и камне.
@@ -330,6 +336,8 @@
                 В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>
         </article>
+
+
 
       </main>
       <footer class="main-footer">
