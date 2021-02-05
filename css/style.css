@@ -1098,7 +1098,14 @@ margin-bottom: 59px;
   margin: 0;
   padding: 0;
 }
-
+.goods-list-2 {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
 
 .goods .goods-list {
   display: grid;
