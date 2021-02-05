@@ -1100,9 +1100,9 @@ margin-bottom: 59px;
 }
 
 
-.goods-list {
+.goods .goods-list {
   display: grid;
-  grid-template-columns: 220px 220px 220px 220px ;
+  grid-template-columns: 220px 220px 220px 220px 220px;
   gap: 20px;
   align-items: center;
   margin: 0;
