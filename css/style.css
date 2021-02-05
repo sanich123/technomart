@@ -399,6 +399,11 @@ background-color: var(--basic-orange);
   font-size: 18px;
   line-height: 20px;
   color: var(--basic-black);
+  text-align: center;
+  margin-top: 28px;
+  margin-left: 18px;
+  margin-right: 17px;
+  margin-bottom: 7px;
 }
 
 .goods-list-item s {
@@ -408,6 +413,42 @@ background-color: var(--basic-orange);
   font-size: 17px;
   line-height: 18px;
   color: var(--special-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 141px;
+  height: 18px;
+}
+
+.goods-list-item b {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  width: 141px;
+  height: 38px;
+  background: #EE3643;
+}
+
+.goods-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 318px;
+}
+
+.goods-list-item-img {
+  width: 144px;
+  height: 128px;
+  margin: 22px 43px 28px 38px;
 }
 
 
@@ -415,7 +456,7 @@ background-color: var(--basic-orange);
 
 .section-service-wrapper {
   width: 1200px;
-margin: 0 auto;
+  margin: 0 auto;
   background-color: var(--special-greylight);
 }
 
@@ -661,13 +702,48 @@ margin: 0 auto;
   font-family: PT Sans;
 }
 
+.filters {
+  width: 220px;
+}
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 27px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0001);
+}
+
+.filters fieldset:nth-last-child {
+  margin-bottom: 37px;
+
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.filters legend {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin-bottom: 15px;
+/*Там три разных отступа*/
+}
+
 .filters h2 {
   font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 18px;
-color: var(--basic-black);
-background-color: #F7F3EC;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: #F7F3EC;
 }
 
 .brands-checkbox-list,
@@ -679,14 +755,31 @@ background-color: #F7F3EC;
   list-style: none;
 }
 
-.filters-form legend {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: var(--basic-black);
+.brands-checkbox-list,
+.brands-radio-list {
+  margin: 0;
+  padding: 0;
+  line-height: 19px;
+}
+
+
+.brands-checkbox-list-item,
+.brands-radio-list li {
+  margin-bottom: 20px;
+}
+
+.price-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 9px;
+}
+
+.price {
+  width: 95px;
+  height: 38px;
 }
 
 /*Чекбоксы*/
@@ -905,9 +998,8 @@ background-color: #F7F3EC;
   height: 42px;
 }
 .upper-navigation {
-  width: 940px;
+   width: 940px;
   display: grid;
-
   grid-template-columns: 220px 2fr 1fr 1fr 150px;
   gap: 17px;
   margin: 0 auto;
@@ -1104,11 +1196,12 @@ margin-bottom: 59px;
 }
 
 .main-header-logo-span {
+
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 220px;
-  height: 47px;
+  height: 42px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
