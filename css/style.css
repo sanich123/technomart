@@ -101,16 +101,6 @@ i {
   font-size: 14px;
   line-height: 24px;
 }
-/*
-.user-cabinet {
-  font-size: 21px;
-  line-height: 21px;
-  background: rgba(0, 0, 0, 0.0001);
-
-
-}
-*/
-
 
 .main-navigation-list,
 .features-list,
@@ -350,8 +340,11 @@ background-color: var(--basic-orange);
 
 
 
+
 .goods-list-item:hover {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
 }
 
 /*Кнопки с ценой, красные все*/
@@ -683,9 +676,66 @@ background-color: var(--basic-orange);
 
 /*Catalog*/
 
+.log-in {
+  font-size: 21px;
+  line-height: 21px;
+  height: 45px;
+  background-color: var(--basic-white);
+  border: none;
+  padding: 0 24px;
+  position: relative;
+  width: 299px;
+  height: 45px;
+}
+
+.log-in::before {
+  content:"";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  background-image: url("/img/icon/user.svg");
+  left: 15px;
+}
+
+
+.log-in::after {
+  content:"";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  background-image: url("/img/icon/logout.svg");
+  right: 20px;
+}
+
+.log-in-cabinet {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7px;
+}
+
 .wrapper-h2 {
   background-color: #f2f6f8;
 }
+
+.wrapper-h2 h1 {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+}
+.breadcrumbs-list {
+  display: flex;
+  justify-content: start;
+}
+
+.breadcrumbs-list-item {
+  margin-right: 41px;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
 
 .breadcrumbs-list-item a {
   list-style:none;
@@ -927,6 +977,15 @@ background-color: var(--basic-orange);
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
   border-radius: 2px;
+  display: flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+}
+
+.long a {
+  width: 140px;
 }
 
 .page-list-item a:hover {
@@ -940,9 +999,11 @@ background-color: var(--basic-orange);
 .active a {
   background: var(--basic-red);
 }
-.about-perforators {
+.about-perforators-wrapper {
+  width: 1200px;
+  margin: 0 auto;
   background: var(--special-greylight);
-}
+  }
 
 .about-perforators h2 {
   font-family: Cuprum;
@@ -952,7 +1013,8 @@ background-color: var(--basic-orange);
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-}
+  padding-top: 64px;
+ }
 .about-perforators p {
   font-family: PT Sans;
   font-style: normal;
@@ -960,6 +1022,7 @@ background-color: var(--basic-orange);
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+  padding-bottom: 68px;
 }
 
 /*Grid-layout*/
@@ -997,15 +1060,33 @@ background-color: var(--basic-orange);
   width: auto;
   height: 42px;
 }
+
+
 .upper-navigation {
-   width: 940px;
+  width: 940px;
   display: grid;
-  grid-template-columns: 220px 2fr 1fr 1fr 150px;
-  gap: 17px;
+  grid-template-columns: 220px 2fr 1fr 1fr 1fr;
   margin: 0 auto;
   height: 42px;
   align-items: center;
  }
+
+ .accept {
+   margin-left: -10px;
+   /*Ну так себе решение, конечно, надо поискать лучше*/
+ }
+
+/*
+ .upper-navigation {
+   width: 940px;
+   display: flex;
+   align-items: center;
+
+ }
+.accept {
+  justify-content: end;
+}
+*/
 
  .upper-navigation .purchase {
   display: flex;
@@ -1114,6 +1195,7 @@ margin-bottom: 59px;
   align-items: center;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 
 .brands,
@@ -1146,9 +1228,11 @@ margin-bottom: 59px;
 
 /*Footer grid*/
 
+
 .main-footer {
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .footer-navigation-list {
@@ -1225,14 +1309,15 @@ margin-bottom: 59px;
 
 }
 .accept {
-
   width: 150px;
   height: 42px;
   background-color: var(--basic-green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
 
+.attention {
+  width: 136px;
+  height: 42px;
+  background-color: var(--basic-red);
 }
 
 
