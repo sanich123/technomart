@@ -21,12 +21,26 @@
               <img src="img/logo-technomart.svg" alt="Логотип магазина Техномарт" width="108" height="18">
             </a>
           </span>
-
           <form class="form-search" action="#" method="POST">
             <input type="search" placeholder="Поиск:">
           </form>
-          <a class="purchase" href="#">Закладки: 0</a>
-          <a class="purchase" href="#">Корзина: 0</a>
+          <a class="purchase bookmarks" href="#">
+            <!--<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
+              </svg>-->
+            Закладки: 0</a>
+          <a class="purchase cart" href="#">
+            <!--<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                fill="white" />
+              <path
+                d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                fill="white" />
+              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+            </svg>-->
+            Корзина: 0
+          </a>
           <a class="purchase" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -40,7 +54,11 @@
             <address class="header-address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </div>
           <div class="user-cabinet-menu">
-            <button class="user-cabinet" type="button">Войти</button>
+            <button class="user-cabinet-login" type="button">
+              <!--<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
+              <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
+              </svg>-->Войти</button>
             <button class="user-cabinet" type="button">Регистрация</button>
           </div>
       </div>
@@ -84,7 +102,6 @@
         </ul>
       </nav>
     </div>
-
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов Техномарт</h1>
@@ -139,53 +156,68 @@
         </div>
         <ul class="goods-list">
           <li class="goods-list-item">
+            <div class="temporable">
             <p class="goods-list-item-img">
               <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </p>
-
+            </p>              
+            </div>
+            <div class="temporable">
             <h3>Перфоратор BOSCH BFG 9000</h3>
-            <p>
-                <s>32500 Р. </s><br>
-                <b>25500 Р.</b>
-            </p>
-        </li>
+            <div class="price-flex">
+              <s>32500 Р. </s>
+              <b>25500 Р.</b>
+            </div>
+            </div>
+          </li>
         <li class="goods-list-item">
+          <div class="temporable">
           <a href="#">
-
             <p class="goods-list-item-img">
-                  <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-              </p>
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+            </p>
           </a>
-          <p>
-              <s>22500 Р. </s><br>
+          </div>
+          <div class="temporable">
+          </div>
+          <div class="temporable">
+          <h3>Перфоратор BOSCH BFG 3000</h3>          
+          <div class="price-flex">
+              <s>22500 Р. </s>
               <b>15500 Р.</b>
-          </p>
+          </div>            
+          </div>
       </li>
       <li class="goods-list-item">
+        <div class="temporable">
         <a href="#">
-
           <p class="goods-list-item-img">
                 <img src="img/bosch-bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </p>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            </p>            
         </a>
-        <p>
-            <s>30500 Р. </s><br>
+        </div>
+        <div class="temporable">
+        <h3>Перфоратор BOSCH BFG 6000</h3>
+        <div class="price-flex">
+            <s>30500 Р. </s>
             <b>25500 Р.</b>
-        </p>
+        </div>
+        </div>
     </li>
     <li class="goods-list-item">
-      <a href="#">
-
+      <div class="temporable">
+     <a href="#">
         <p class="goods-list-item-img">
-              <img src="img/bosch-bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-          </p>
-          <h3>Перфоратор BOSCH BFG 2000</h3>
-      </a>
-      <p>
-          <b>12500 Р.</b>
-      </p>
+          <img src="img/bosch-bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+        </p>
+        </a>
+      </div>
+      <div class="temporable">
+          <h3>Перфоратор BOSCH BFG 2000</h3>      
+      <div class="price-flex">
+        <s></s>
+        <b>12500 Р.</b>
+      </div>
+      </div>
   </li>
       </ul>
       </section>
@@ -292,7 +324,6 @@
         <a class="open-button" href="#">Заблудились? Напишите нам!</a>
       </section>
       </div>
-
     </main>
     <footer class="main-footer">
       <div class="navigation-footer">
@@ -368,13 +399,26 @@
 
       <ul class="social-list">
         <li class="social-list-item">
-          <a class="social-button" href="#">"Вконтакте"</a>
+          <a class="social-button" href="#"><svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.138 12.51C17.094 12.201 18.318 14.55 19.621 15.449C20.599 16.13 21.348 15.983 21.348 15.983L24.821 15.933C24.821 15.933 26.636 15.821 25.778 14.379C25.707 14.259 25.275 13.31 23.193 11.357C21.016 9.31398 21.311 9.64498 23.932 6.11298C25.529 3.95998 26.168 2.64498 25.968 2.08498C25.776 1.54598 24.603 1.68598 24.603 1.68598L20.69 1.71298C20.309 1.71398 19.986 1.83198 19.839 2.22798C19.836 2.23198 19.218 3.89398 18.394 5.30698C16.653 8.29598 15.958 8.45498 15.67 8.26798C15.009 7.83498 15.176 6.53098 15.176 5.60398C15.176 2.70698 15.608 1.49898 14.33 1.18698C13.903 1.08298 13.591 1.01498 12.502 1.00498C11.11 0.983976 9.928 1.00498 9.258 1.33398C8.813 1.55698 8.472 2.04598 8.679 2.07398C8.939 2.10898 9.522 2.23398 9.834 2.65998C10.235 3.21198 10.223 4.44898 10.223 4.44898C10.223 4.44898 10.452 7.85998 9.683 8.28298C9.155 8.57298 8.433 7.98098 6.88 5.26698C6.087 3.87898 5.488 2.34498 5.488 2.34498C5.488 2.34498 5.372 2.05998 5.162 1.90398C4.912 1.71898 4.562 1.65998 4.562 1.65998L0.848 1.68398C0.848 1.68398 0.29 1.69998 0.0850002 1.94598C-0.0969998 2.16398 0.0700002 2.61398 0.0700002 2.61398C0.0700002 2.61398 2.979 9.49498 6.273 12.961C9.293 16.143 12.725 15.932 12.725 15.932H14.28C14.28 15.932 14.749 15.878 14.989 15.62C15.213 15.38 15.203 14.929 15.203 14.929C15.203 14.929 15.172 12.82 16.138 12.51Z"
+              fill="white" />
+          </svg></a>
         </li>
         <li class="social-list-item">
-          <a class="social-button" href="#">"Facebook"</a>
+          <a class="social-button" href="#">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+            </svg>
+</a>
         </li>
         <li class="social-list-item">
-          <a class="social-button" href="#">"Instagram"</a>
+          <a class="social-button" href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
+              fill="white" />
+          </svg>
+</a>
         </li>
       </ul>
       <p class="copyright">
@@ -386,8 +430,6 @@
       </p>
         </div>
       </div>
-
-
     </footer>
     <section class="modal feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
