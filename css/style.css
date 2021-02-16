@@ -106,7 +106,7 @@ i {
   content:"";
   width: 19px;
   height: 19px;
-  background-image: url("../img/icon/phone.svg");
+  background-image: url(../img/icon/phone.svg);
   position: absolute;
   left: 16px;
 }
