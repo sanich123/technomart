@@ -23,7 +23,9 @@
           </span>
 
           <form class="form-search" action="#" method="POST">
-            <input type="search" placeholder="Поиск:">
+            <label for="input-search">
+              <input type="search" class="input-search" placeholder="Поиск:">
+            </label>
           </form>
           <a class="purchase bookmarks" href="#">Закладки: 0</a>
           <a class="purchase cart attention" href="#">Корзина: 0</a>
@@ -143,8 +145,16 @@
 
               </li>
               <div clas="sort-list-buttons">
-<button class="sort-list-button" type="button">Вверх</button>
-<button class="sort-list-button" type="button">Вниз</button>
+<button class="sort-list-button" type="button">
+  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.66241 0L11.1624 10L0.162415 10" fill="black"/>
+  </svg>
+</button>
+<button class="sort-list-button" type="button">
+  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.66241 10L0.162415 0H11.1624" fill="black"/>
+  </svg>
+  </button>
               </div>
             </ul>
 
@@ -156,11 +166,29 @@
                     <legend>
                         Цена:
                     </legend>
+                    <div class="range-filter">
                     <div class="price-range">
-                      <input class="price" type="range" min="0" max="30000" step="1000" value="20000">
+                      <div class="range-controls">
+                        <div class="scale">
+                        <div class="bar"style="width: 30%;margin-left: 20%"></div>
+                      </div>
+                        <div class="toggle toggle-min" tabindex="0" style="left: 20%">
+
+                        </div>
+                        <div class="toggle toggle-max" tabindex="0" style="left: 50%">
+
+                        </div>
                     </div>
-                    <input class="price" type="number" placeholder="0"> -
-                    <input class="price" type="number" placeholder="30000">
+                    </div>
+                    <div class="price-controls">
+                    <label class="min-price">
+                      <input class="price" type="number" placeholder="0"> -
+                    </label>
+                    <label class="max-price">
+                      <input class="price" type="number" placeholder="30000">
+                    </label>
+                    </div>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>
@@ -168,23 +196,23 @@
                     </legend>
                     <ul class="brands-checkbox-list">
                         <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
+                            <input class="visually-hidden brands-checkbox " type="checkbox" id="filter-bosch" name="bosch" checked>
                             <label for="filter-bosch">Bosch</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox" type="checkbox" id="filter-interscol" name="interscol">
+                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-interscol" name="interscol">
                             <label for="filter-interscol">Интерскол</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
+                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-makita" name="makita" checked>
                             <label for="filter-makita">Makita</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox" type="checkbox" id="filter-dewalt" name="dewalt">
+                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-dewalt" name="dewalt">
                             <label for="filter-dewalt">Dewalt</label>
                         </li>
                         <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
+                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-hitachi" name="hitachi">
                             <label for="filter-hitachi">Hitachi</label>
                         </li>
                     </ul>
@@ -195,16 +223,16 @@
                     </legend>
                     <ul class="brands-radio-list">
                         <li>
-                            <input class="brands-radio" type="radio" id="filter-batteried" name="power-group" value="batteried">
+                            <input class="brands-radio visually-hidden" type="radio" id="filter-batteried" name="power-group" value="batteried">
                             <label for="filter-batteried">Аккумуляторные</label>
                         </li>
                         <li>
-                            <input class="brands-radio" type="radio" id="filter-wired" name="power-group" value="wired">
+                            <input class="brands-radio visually-hidden" type="radio" id="filter-wired" name="power-group" value="wired">
                             <label for="filter-wired">Сетевые</label>
                         </li>
                     </ul>
                 </fieldset>
-                <button class="submit">
+                <button class="show">
                     Показать
                 </button>
             </form>
@@ -263,7 +291,7 @@
                   <div class="temporable">
                       <p class="goods-list-item-img">
                         <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-                      </p>                    
+                      </p>
                   </div>
                   <div class="temporable">
                     <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -295,7 +323,7 @@
                       <p class="goods-list-item-img">
                         <img src="img/bosch-bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                       </p>
-                    </a>                    
+                    </a>
                   </div>
                   <div class="temporable">
                     <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -311,14 +339,14 @@
                       <p class="goods-list-item-img">
                         <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                       </p>
-                    </a>                    
+                    </a>
                   </div>
                   <div class="temporable">
                     <h3>Перфоратор BOSCH BFG 3000</h3>
                     <div class="price-flex">
                       <s>22500 Р.</s>
                       <b>15500 Р.</b>
-                    </div>                      
+                    </div>
                   </div>
               </li>
               <li class="goods-list-item">

@@ -22,7 +22,9 @@
             </a>
           </span>
           <form class="form-search" action="#" method="POST">
-            <input type="search" placeholder="Поиск:">
+            <label for="input-search">
+            <input type="search" class="input-search" placeholder="Поиск:">
+          </label>
           </form>
           <a class="purchase bookmarks" href="#">
             <!--<svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +122,6 @@
             <h3>Техника</h3>
             <a href="#">для стройки</a>
           </li>
-
           <li class="slider-item">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
@@ -129,7 +130,6 @@
             <button class="slider-button-1" disabled>Назад</button>
             <button class="slider-button-2">Вперед</button>
           </li>
-
           <li class="feature-list-item">
             <h3>Скидки 50%</h3>
             <a href="#">на 350 товаров</a>
@@ -159,7 +159,7 @@
             <div class="temporable">
             <p class="goods-list-item-img">
               <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </p>              
+            </p>
             </div>
             <div class="temporable">
             <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -180,11 +180,11 @@
           <div class="temporable">
           </div>
           <div class="temporable">
-          <h3>Перфоратор BOSCH BFG 3000</h3>          
+          <h3>Перфоратор BOSCH BFG 3000</h3>
           <div class="price-flex">
               <s>22500 Р. </s>
               <b>15500 Р.</b>
-          </div>            
+          </div>
           </div>
       </li>
       <li class="goods-list-item">
@@ -192,7 +192,7 @@
         <a href="#">
           <p class="goods-list-item-img">
                 <img src="img/bosch-bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </p>            
+            </p>
         </a>
         </div>
         <div class="temporable">
@@ -212,7 +212,7 @@
         </a>
       </div>
       <div class="temporable">
-          <h3>Перфоратор BOSCH BFG 2000</h3>      
+          <h3>Перфоратор BOSCH BFG 2000</h3>
       <div class="price-flex">
         <s></s>
         <b>12500 Р.</b>
@@ -324,6 +324,9 @@
         <a class="open-button" href="#">Заблудились? Напишите нам!</a>
       </section>
       </div>
+
+
+
     </main>
     <footer class="main-footer">
       <div class="navigation-footer">
@@ -431,31 +434,35 @@
         </div>
       </div>
     </footer>
-    <section class="modal feedback">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="feedback-form" method="get" action="#">
-        <p class="feedback-item">
-          <label class="feedback-label">Ваше имя:
-            <input class="feedback-item-input" type="text" placeholder="Имя Фамилия" name="name">
-          </label>
-        </p>
-        <p class="feedback-item">
-          <label class="feedback-label">Ваш e-mail:
-            <input class="feedback-item-input" type="text" placeholder="email@example.com" name="e-mail">
-          </label>
-        </p>
-        <p class="feedback-item">
-          <label class="feedback-label">Текст письма:
-            <input class="feedback-item-input" rows="5" cols="5" name="text" type="textarea" placeholder="В свободной форме" name="message">
-          </label>
-        </p>
-        <div class="feedback-bottom">
-          <button class="open-button big-button">Отправить</button>
-        </div>
-      </form>
-      <button class="close-button" type="button">Закрыть</button>
+        <section class="modal feedback">
+          <h2 class="visually-hidden">Напишите нам</h2>
+          <div class="big-thin-red-line">
+
+          </div>
+          <form class="feedback-form" method="get" action="#">
+            <p class="feedback-item">
+              <label class="feedback-label">Ваше имя:
+                <input class="feedback-item-input" type="text" placeholder="Имя Фамилия" name="name">
+              </label>
+            </p>
+            <p class="feedback-item">
+              <label class="feedback-label">Ваш e-mail:
+                <input class="feedback-item-input" type="text" placeholder="email@example.com" name="e-mail">
+              </label>
+            </p>
+            <p class="feedback-item">
+              <label class="feedback-label">Текст письма:<br>
+                <input class="feedback-item-input" rows="5" cols="5" name="text" type="textarea" placeholder="В свободной форме"
+                  name="message">
+              </label>
+            </p>
+           <div class="feedback-bottom">
+              <button class="open-button big-button">Отправить</button>
+            </div>
+            <button class="close-button-feedback" type="button">Закрыть</button>
+          </form>
     </section>
-    <section class="modal map-popup">
+    <section class="modal map-popup container">
       <img src="img/map-popup.jpg" alt="Как к нам проехать, карта" width="943" height="449">
       <button class="close-button" type="button">Закрыть</button>
     </section>
