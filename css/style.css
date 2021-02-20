@@ -211,7 +211,8 @@ input[type="search"]::placeholder {
   font-size: 18px;
   line-height: 24px;
   padding-top: 1px;
- }
+  padding-bottom: -1px;
+   }
 
 .purchase:focus {
   background-color: var(--special-black);
