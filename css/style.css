@@ -698,7 +698,7 @@ color: var(--basic-greylight);
   left: 305px;
   z-index: 20;
 }
-
+/*Проверка коммита*/
 .slide {
   display: none;
 }
