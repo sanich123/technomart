@@ -53,7 +53,7 @@
             <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </div>
-          <div class="user-cabinet-menu">
+          <div class="user-cabinet-menu pre-log-in">
             <button class="user-cabinet-login" type="button">
               <!--<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
@@ -120,7 +120,7 @@
             <h3>Техника</h3>
             <a href="#">для стройки</a>
           </li>
-          <li class="slider-item slide slide-current">
+          <li class="slider-item slide ">
             <h3>Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
             <img src="img/slider-1.jpg" alt="Изображение мужчины с перфоратором" width="620" height="266">
@@ -136,7 +136,7 @@
             <h3>Скидки 50%</h3>
             <a href="#">на 350 товаров</a>
           </li>
-          <li class="slider-item slide ">
+          <li class="slider-item slide slide-current">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <img src="img/slider-2.jpg" alt="Изображение мужчины с дрелью" width="620" height="266">
@@ -157,65 +157,75 @@
         </div>
         <ul class="goods-list">
           <li class="goods-list-item">
+            <div class="hidden-block">
+              <div class="purchase-buttons">
+                <button class="accept-buy" type="button">Купить</button>
+                <button class="to-bookmarks" type="button">В закладки</button>
+              </div>
+            </div>
             <div class="temporable-1">
-            <p class="goods-list-item-img">
-              <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-            </p>
+              <a href="#">
+                <img src="img/bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+              </a>
             </div>
             <div class="temporable">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
-            <div class="price-flex">
+              <h3>Перфоратор BOSCH BFG 9000</h3>
               <s>32500 Р. </s>
               <b>25500 Р.</b>
             </div>
-            </div>
           </li>
         <li class="goods-list-item">
+            <div class="hidden-block">
+              <div class="purchase-buttons">
+                <button class="accept-buy" type="button">Купить</button>
+                <button class="to-bookmarks" type="button">В закладки</button>
+              </div>
+            </div>
           <div class="temporable-1">
           <a href="#">
-            <p class="goods-list-item-img">
-              <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-            </p>
+            <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           </a>
           </div>
           <div class="temporable">
           <h3>Перфоратор BOSCH BFG 3000</h3>
-          <div class="price-flex">
-              <s>22500 Р. </s>
-              <b>15500 Р.</b>
-          </div>
+          <s>22500 Р. </s>
+          <b>15500 Р.</b>
           </div>
       </li>
       <li class="goods-list-item">
+        <div class="hidden-block">
+        <div class="purchase-buttons">
+          <button class="accept-buy" type="button">Купить</button>
+          <button class="to-bookmarks" type="button">В закладки</button>
+        </div>
+        </div>
         <div class="temporable-1">
         <a href="#">
-          <p class="goods-list-item-img">
-                <img src="img/bosch-bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-            </p>
+          <img src="img/bosch-bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
         </a>
         </div>
         <div class="temporable">
         <h3>Перфоратор BOSCH BFG 6000</h3>
-        <div class="price-flex">
             <s>30500 Р. </s>
             <b>25500 Р.</b>
         </div>
-        </div>
     </li>
     <li class="goods-list-item">
+      <div class="hidden-block">
+        <div class="purchase-buttons">
+          <button class="accept-buy" type="button">Купить</button>
+          <button class="to-bookmarks" type="button">В закладки</button>
+        </div>
+      </div>
       <div class="temporable-1">
      <a href="#">
-        <p class="goods-list-item-img">
-          <img src="img/bosch-bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-        </p>
-        </a>
+      <img src="img/bosch-bfg-2000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+    </a>
       </div>
       <div class="temporable">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-      <div class="price-flex">
-        <s></s>
+        <s>22500 Р.</s>
         <b>12500 Р.</b>
-      </div>
       </div>
   </li>
       </ul>
@@ -223,7 +233,7 @@
       <section class="brands container">
         <div class="popular">
           <h2>Популярные производители:</h2>
-          <a class="open-button" href="#">Все производители</a>
+          <a class="open-button for-margin-right" href="#">Все производители</a>
         </div>
         <ul class="brands-list">
           <li class="brand-list-item">
@@ -283,7 +293,8 @@
       <ul class="services-list">
         <li class="service-list-item slide-current">
           <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+          <p>Мы с удовольствием доставим ваш товар прямо
+             к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!<p>
         </li>
         <li class="service-list-item visually-hidden">
           <h3>Гарантия</h3>
@@ -298,10 +309,7 @@
         </li>
       </ul>
         </div>
-
-
       </div>
-
       </section>
       </div>
       <div class="index-columns container">
@@ -426,7 +434,7 @@
         </div>
       </div>
     </footer>
-        <section class="modal feedback">
+    <section class="modal feedback">
           <h2 class="visually-hidden">Напишите нам</h2>
           <form class="feedback-form" method="get" action="#">
             <div class="feedback-item">
@@ -441,8 +449,7 @@
             </div>
             <div class="feedback-item">
               <label class="feedback-label">Текст письма:<br>
-                <input class="feedback-item-input" type="textarea" rows="35" cols="25" name="text"  placeholder="В свободной форме"
-                  name="message">
+                <textarea class="feedback-item-input" cols="62" rows="5" placeholder="В свободной форме"></textarea>
               </label>
             </div>
             <button class="close-button-feedback" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -457,10 +464,11 @@
     </section>
     <section class="modal map-popup container">
       <img src="img/map-popup.jpg" alt="Как к нам проехать, карта" width="943" height="449">
-      <button class="close-button" type="button">
+      <button class="close-button" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
         d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
         fill="#EE3643" />
+      </svg>
       </button>
     </section>
   </body>
