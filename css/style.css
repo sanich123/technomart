@@ -225,7 +225,6 @@ input[type="search"]::placeholder {
   line-height: 24px;
 }
 
-
 /*Закладки, корзина, оформить заказ*/
 
 .purchase {
@@ -250,8 +249,6 @@ input[type="search"]::placeholder {
 
 .attention {
   background-color: var(--basic-red);
-
-
 }
 .bookmarks-svg {
   margin-bottom: 2px;
@@ -294,8 +291,7 @@ input[type="search"]::placeholder {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-  height: 41px;
+height: 41px;
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
