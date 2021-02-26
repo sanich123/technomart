@@ -23,7 +23,11 @@
           </span>
           <form class="form-search" action="#" method="POST">
             <label for="input-search">
-            <input type="search" class="input-search" placeholder="Поиск:">
+
+           <input type="search" class="input-search" placeholder="Поиск:">
+           <svg class="search-svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+            </svg>
           </label>
           </form>
           <a class="purchase bookmarks" href="#">
@@ -152,7 +156,7 @@
       </section>
       <section class="goods container">
         <div class="popular">
-          <h2>Популярные товары: </h2>
+          <h2>Популярные товары:                       </h2>
           <a class="open-button" href="#">Все популярные товары</a>
         </div>
         <ul class="goods-list">
@@ -169,7 +173,8 @@
               </a>
             </div>
             <div class="temporable">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <h3>Перфоратор BOSCH BFG 9000
+              </h3>
               <s>32500 Р. </s>
               <b>25500 Р.</b>
             </div>
@@ -232,7 +237,7 @@
       </section>
       <section class="brands container">
         <div class="popular">
-          <h2>Популярные производители:</h2>
+          <h2>Популярные производители: </h2>
           <a class="open-button for-margin-right" href="#">Все производители</a>
         </div>
         <ul class="brands-list">
@@ -294,7 +299,9 @@
         <li class="service-list-item slide-current">
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо
-             к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!<p>
+             к вашему подъезду совершенно бесплатно!
+             <br>Ведь мы неплохо заработаем,
+             <br>поднимая его на ваш этаж!<p>
         </li>
         <li class="service-list-item visually-hidden">
           <h3>Гарантия</h3>
@@ -452,7 +459,7 @@
                 <textarea class="feedback-item-input" cols="62" rows="5" placeholder="В свободной форме"></textarea>
               </label>
             </div>
-            <button class="close-button-feedback" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="close-button-feedback" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
                 fill="#EE3643" />
@@ -462,12 +469,16 @@
             <button class="open-button big-button">Отправить</button>
           </div>
     </section>
-    <section class="modal map-popup container">
-      <img src="img/map-popup.jpg" alt="Как к нам проехать, карта" width="943" height="449">
-      <button class="close-button" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-        d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
-        fill="#EE3643" />
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!--<img src="img/map-popup.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="943" height="449">-->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="943" height="449" allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <button class="close-button" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z"
+        fill="#EE3643"/>
       </svg>
       </button>
     </section>
