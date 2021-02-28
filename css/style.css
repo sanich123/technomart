@@ -1621,6 +1621,7 @@ input[type="search"]::placeholder {
   gap: 5px;
   margin-top: 7px;
   margin-left: 15px;
+  color: var(--basic-blue2);
 }
 
 .log-in-cabinet-item:nth-child(1)::after {
