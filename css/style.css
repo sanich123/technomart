@@ -16,18 +16,22 @@
 --special-pink: #DC91D8;
 --special-green: #8ED78F;
 --special-green2: #367315;
---special-blue: #293449;
+--special-green3: #5FBB2D;
+--special-green4: #518534;
 --special-blue3: #1D2739;
 --special-orange:  #FFD180;
 --special-orange2: #FFC047;
 --special-blue2:  linear-gradient(0deg, #212A3A, #212A3A);
+--special-blue3: #405069;
 --special-black: #161D29;
 --special-grey: rgba(169,169,169,0.3);
 --special-greylight: #F1F5F7;
 --special-grey2: #f3f7f9;
+--special-grey3: #F7F3EC;
 --special-red: #CA2C37;
 --special-darkred: #BA2732;
 --special-brown: #EAEAEA;
+--special-line-through: #a9a9a9;
 }
 
 
@@ -432,7 +436,7 @@ input[type="search"]::placeholder {
 .main-navigation {
   min-height: 60px;
   background-color: var(--basic-blue2);
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--special-blue);
 }
 
 .main-navigation-list {
@@ -844,6 +848,7 @@ input[type="search"]::placeholder {
   display: none;
 }
 
+
 .purchase-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -873,11 +878,11 @@ input[type="search"]::placeholder {
 }
 
 .accept-buy:hover {
-  background: #5FBB2D;
+  background: var(--special-green3);
 }
 
 .accept-buy:focus {
-  background: #518534;
+  background: var(--special-green4);
 }
 
 .accept-buy::before {
@@ -903,7 +908,7 @@ input[type="search"]::placeholder {
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-blue);
-  border: 3px solid #63A63E;
+  border: 3px solid var(--basic-green);
   box-sizing: border-box;
   border-radius: 2px;
   width: 135px;
@@ -932,7 +937,7 @@ input[type="search"]::placeholder {
   text-align: center;
   text-decoration-line: line-through;
   text-transform: uppercase;
-  color: #A9A9A9;
+  color: var(--special-line-through);
 }
 
 .goods-list-item h3 {
@@ -1205,13 +1210,15 @@ input[type="search"]::placeholder {
 }
 
 .services-button {
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: start;
   padding-left: 22px;
   padding-bottom: 5px;
   background:rgba(50, 66, 92, 1);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-blue),
+  inset 0px 1px 0p var(--special-blue3);
   color: var(--basic-white);
   width: 240px;
   height: 62px;
@@ -1386,7 +1393,8 @@ input[type="search"]::placeholder {
 
 .social-list, .footer-navigation-list,
 .additional-list {
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1475,7 +1483,7 @@ input[type="search"]::placeholder {
   justify-content: center;
   width: 220px;
   height: 68px;
-  background: #EE3643;
+  background: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
@@ -1506,7 +1514,7 @@ input[type="search"]::placeholder {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: #F1F5F7;
+  color: var(--special-greylight);
 }
 
 .additional-list-item a {
@@ -1525,9 +1533,10 @@ input[type="search"]::placeholder {
   text-decoration: underline;
 }
 
-.additional-list-item a:focus,
-.footer-navigation-item a:focus {
+.additional-list-item a:active,
+.footer-navigation-item a:active {
   opacity: 0.5;
+  text-decoration: none;
 }
 
 
@@ -1734,15 +1743,16 @@ input[type="search"]::placeholder {
 }
 
 .filters-wrapper {
-  background: #F7F3EC;
+  background: var(--special-grey3);
   width: 220px;
   height: 38px;
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .filters-wrapper-long {
-  background: #F7F3EC;
+  background: var(--special-grey3);
   width: 700px;
   height: 38px;
   display: grid;
@@ -1801,12 +1811,12 @@ input[type="search"]::placeholder {
   color: var(--basic-black);
   opacity: 0.3;
   text-transform: uppercase;
-  border-bottom: 1px dotted #EE3643;
+  border-bottom: 1px dotted var(--basic-red);
 }
 
 .sort-list-item a:hover {
   opacity: 1;
-  border-bottom: 1px solid #ee3643;
+  border-bottom: 1px solid var(--basic-red);
   }
 
  .active-item a {
@@ -1837,7 +1847,7 @@ input[type="search"]::placeholder {
 /*Крутилки цены*/
 .price,
 .price-range {
-  background-color: #F7F3EC;
+  background-color: var(--special-grey3);
 }
 
   .price-range {
@@ -1897,7 +1907,7 @@ input[type="search"]::placeholder {
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid #ffffff;
+    border: 8px solid #var(--basic-white);
     background-color: #ababab;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1929,7 +1939,7 @@ input[type="search"]::placeholder {
   padding: 0;
   margin: 0;
   border: none;
-  border-bottom: 1px solid #F7F3EC;
+  border-bottom: 1px solid var(--special-grey3);
 }
 
 .filters .first-fieldset {
@@ -1957,7 +1967,7 @@ input[type="search"]::placeholder {
   display: flex; flex-wrap: wrap;
   align-items: center;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .filters legend {
@@ -1977,7 +1987,7 @@ input[type="search"]::placeholder {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
-  background-color: #F7F3EC;
+  background-color: var(--special-grey3);
 }
 
 .brands-checkbox-list,
@@ -2129,7 +2139,7 @@ input[type="search"]::placeholder {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
-  background: #FFFFFF;
+  background: #var(--basic-white);
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
   border-radius: 2px;
@@ -2310,7 +2320,7 @@ input[type="search"]::placeholder {
   border: 2px solid #C5C5C5;
   box-sizing: border-box;
   border-radius: 2px;
-  color: #a9a9a9;
+  color: var(--special-line-through);
   border: 2px solid #C5C5C5;
   box-sizing: border-box;
   border-radius: 2px;
@@ -2319,7 +2329,7 @@ input[type="search"]::placeholder {
 
 .feedback-item-input::placeholder {
   padding-left: 8px;
-  color: #A9A9A9;
+  color: var(--special-line-through);
 }
 
 .feedback-item-input::placeholder:nth-child(3) {
@@ -2385,7 +2395,7 @@ input[type="search"]::placeholder {
 /*Всплывающее окно с товаром в корзине*/
 
 .cart-popup {
-  display: grid;
+  display: none;
   position: fixed;
   grid-template-rows:
   163px
