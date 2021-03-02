@@ -832,7 +832,8 @@ input[type="search"]::placeholder {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.goods-list-item:hover .hidden-block {
+.goods-list-item:hover .hidden-block,
+.goods-list-item:focus-within .hidden-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -847,7 +848,6 @@ input[type="search"]::placeholder {
 .hidden-block {
   display: none;
 }
-
 
 .purchase-buttons {
   display: flex;
@@ -1238,10 +1238,10 @@ input[type="search"]::placeholder {
 }
 
 .services-button:hover {
-  background: var(--special-blue);
+  background: var(--basic-blue);
 }
 
-.services-button:focus {
+.services-button:active {
   background: var(--basic-white);
   color: var(--basic-black);
   border: transparent;
