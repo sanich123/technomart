@@ -367,6 +367,7 @@ input[type="search"]::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: var(--basic-blue2);
 }
 
 .user-cabinet-menu {
@@ -1654,6 +1655,9 @@ input[type="search"]::placeholder {
   color: #c5c5c5;
 }
 
+.log-in-cabinet-item a {
+  color: var(--basic-blue2);
+}
 
 
 
