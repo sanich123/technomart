@@ -1909,7 +1909,7 @@ input[type="search"]::placeholder {
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid #var(--basic-white);
+    border: 8px solid var(--basic-white);
     background-color: #ababab;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 #cfcfcf;
