@@ -1533,7 +1533,7 @@ input[type="search"]::placeholder {
 }
 
 .social-list-item a {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -2369,7 +2369,7 @@ input[type="search"]::placeholder {
 /*Всплывающее окно с товаром в корзине*/
 
 .cart-popup {
-  display: none;
+  display: grid;
   position: fixed;
   grid-template-rows:
   163px
