@@ -301,7 +301,7 @@ img {
   width: 940px;
   margin: 0 auto;
   display: grid;
-  grid-template-rows: 158px min-content;
+  grid-template-rows: minmax(158px, auto) min-content;
 }
 
 .itallic-block {
@@ -776,7 +776,7 @@ img {
   margin-bottom: 70px;
 }
 
-.goods-list .goods-list-item:nth-child(1) .temporable-1 {
+.goods-list-item:nth-child(1) .temporable-1 {
   margin-left: 6px;
   margin-top: -7px;
 }
@@ -852,6 +852,7 @@ img {
   z-index: 20;
 }
 */
+
 .goods-list-item:hover .temporable-1 {
   display: none;
 }
@@ -872,20 +873,23 @@ img {
 .accept-buy {
   position: relative;
   font-family: "Cuprum", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-grid;
+  grid-auto-flow: column;
+  column-gap: 8px;
   align-items: center;
   justify-content: center;
-  text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
   background: var(--basic-green);
-  box-shadow: inset 0px -3px 0px var(-special-green2);
+  box-shadow: inset 0px -3px 0px var(--special-green2);
   border-radius: 2px;
   width: 135px;
   height: 38px;
+  margin-left: -2px;
 }
 
 .accept-buy:hover {
@@ -896,15 +900,9 @@ img {
   background: var(--special-green4);
 }
 
-.accept-buy::before {
-  position: absolute;
-  content:"";
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icon/cart.svg");
-  left: 20px;
-  top: 8px;
+.cart-svg {
   opacity: 0.3;
+  margin-left: -13px;
 }
 
 .to-bookmarks {
@@ -924,6 +922,8 @@ img {
   border-radius: 2px;
   width: 135px;
   height: 38px;
+  margin-left: -2px;
+  padding-top: 2px;
 }
 
 .to-bookmarks:hover {
@@ -1013,7 +1013,8 @@ img {
 /*Кнопки с ценой, красные все*/
 .open-button,
 .purchase-button {
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
@@ -1094,12 +1095,12 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding-bottom: 67px;
-  padding-top: 44px;
+  padding-top: 71px;
 }
 
 .services {
   padding-top: 65px;
-  padding-bottom: 99px;
+  padding-bottom: 71px;
 }
 
 
@@ -1238,6 +1239,10 @@ img {
   background: var(--basic-white);
   color: var(--basic-black);
   box-shadow: none;
+}
+
+.current:hover {
+  color: var(--basic-white);
 }
 
 .services-button:hover {
@@ -2125,12 +2130,13 @@ img {
 
 .page-list {
   display: grid;
-  grid-template-columns: 38px 38px 38px 140px;
+  grid-template-columns: min-content min-content min-content min-content;
   gap: 10px;
   margin-top: 30px;
   margin-bottom: 34px;
   padding: 0;
 }
+
 
 .page-list-item a {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2145,10 +2151,11 @@ img {
   border-radius: 2px;
   display: flex;
   flex-wrap: wrap;
-  height: 38px;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  min-height: 38px;
+  min-width: 38px;
 }
 
 /*Корзина popup*/
@@ -2199,7 +2206,7 @@ img {
   width: 100%;
   margin: 0 auto;
   background: var(--special-greylight);
-  height: 261px;
+  min-height: 261px;
   }
 
 .about-perforators h2 {
