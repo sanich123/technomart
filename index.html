@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <link rel="stylesheet" href="css/minified.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/minified.css">-->
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon.svg" type="image/svg+×ml">
+    <link rel="icon" href="img/favicon.svg" type="image/svg">
     <link rel="apple-touch-icon" href="img/favicon152.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -24,7 +24,7 @@
           </span>
           <form class="form-search" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
             <label for="input-search">
-           <input type="search" class="input-search" placeholder="Поиск:">
+           <input id="input-search" type="search" class="input-search" placeholder="Поиск:">
            <svg aria-hidden="true" focusable="false" class="search-svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
             </svg>
@@ -58,8 +58,8 @@
             <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </div>
           <div class="user-cabinet-menu pre-log-in">
-            <button class="user-cabinet-login" type="button">Войти</button>
-            <button class="user-cabinet" type="button">Регистрация</button>
+            <a class="user-cabinet-login" href="#">Войти</a>
+            <a class="user-cabinet" href="#">Регистрация</a>
           </div>
         </div>
         <nav class="main-navigation">
@@ -148,7 +148,7 @@
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <img src="img/slider-2.jpg" alt="Изображение мужчины с дрелью" width="620" height="266">
-            <a class="open-button"href="catalog.html">Открыть каталог</a>
+            <a class="open-button" href="catalog.html">Открыть каталог</a>
             <button class="slider-button-1" type="button" aria-label="Назад" disabled>
               <svg width="22" height="40" viewBox="0 0 23 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.83 0.965027L22.919 3.06403L5.13 20.947L22.977 38.886L20.887 40.985L0.951996 20.947L20.83 0.965027Z"
@@ -303,7 +303,7 @@
       Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-wrapper container">
           <div class="services-buttons">
-            <button class="services-button current" type="button" checked>Доставка</button>
+            <button class="services-button current" type="button">Доставка</button>
             <button class="services-button" type="button">Гарантия</button>
             <button class="services-button" type="button">Кредит</button>
           </div>
@@ -347,7 +347,9 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-        <img src="img/map.png" alt="Как к нам проехать, карта" width="300" height="158">
+        <a href="https://www.google.ru/maps">
+          <img src="img/map.png" alt="Как к нам проехать, карта" width="300" height="158">
+        </a>        
         <a class="open-button contacts-button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -356,7 +358,8 @@
       <div class="navigation-footer">
         <div class="logo-navigation container">
           <span class="logo-navigation-span">
-            <a href="#" class="logo-footer"><img src="img/logo-footer.svg" width="138" height="23" alt="Логотип Техномарта"></a>
+            <a href="#" class="logo-footer">
+              <img src="img/logo-footer.svg" width="138" height="23" alt="Логотип Техномарта"></a>
           </span>
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">

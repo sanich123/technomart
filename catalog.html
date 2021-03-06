@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/minified.css">
-    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<link rel="stylesheet" href="css/minified.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon.svg" type="image/svg+×ml">
+    <link rel="icon" href="img/favicon.svg" type="image/svg">
     <link rel="apple-touch-icon" href="img/favicon152.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -24,23 +24,27 @@
           </span>
           <form class="form-search" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
             <label for="input-search">
-            <input type="search" class="input-search" placeholder="Поиск:">
-            <svg aria-hidden="true" focusable="false" class="search-svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-            </svg>
-          </label>
+              <input id="input-search" type="search" class="input-search" placeholder="Поиск:">
+                <svg aria-hidden="true" focusable="false" class="search-svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                </svg>
+            </label>
           </form>
           <a class="purchase bookmarks" href="#">
             <svg aria-hidden="true" focusable="false" class="bookmarks-svg" width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
-            </svg>Закладки: 0</a>
+              <path d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z" fill="white"/>
+            </svg>Закладки: 0
+          </a>
           <a class="purchase cart attention" href="#">
             <svg aria-hidden="true" focusable="false" class="cart-svg" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
-            <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
-            <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-          </svg>Корзина: 10</a>
-          <a class="accept" href="#">Оформить заказa</a>
+              <path d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z" fill="white"/>
+              <path d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z" fill="white"/>
+              <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+            </svg>Корзина: 10
+          </a>
+          <a class="accept" href="#">Оформить заказ
+
+          </a>
         </div>
       </div>
       <div class="medium-navigation">
@@ -53,9 +57,9 @@
             <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           </div>
           <div class="user-cabinet-menu">
-            <button class="log-in" type="button">
+            <a href="#" class="log-in" type="button">
               Равшан Джамшутович
-            </button>
+            </a>
             <ul class="log-in-cabinet">
               <li class="log-in-cabinet-item">
                 <a href="#">Мои заказы</a>
@@ -68,79 +72,79 @@
             </ul>
           </div>
         </div>
-      <nav class="main-navigation">
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a href="index.html" href="#">
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item">
+              <a href="index.html">
               Главная
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="#">
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#">
               Компания
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="catalog.html">
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="catalog.html">
               Каталог
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="#">
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#">
               Новости
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="#">
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#">
               Спецпредложения
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="#">
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#">
               Доставка
-            </a>
-          </li>
-          <li class="main-navigation-item">
-            <a href="#">
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a href="#">
               Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
+              </a>
+            </li>
+          </ul>
+        </nav>
     </div>
     </header>
       <main>
         <ul class="breadcrumbs-list container">
           <li class="breadcrumbs-list-item">
-              <a href="index.html" aria-label="Главная">
-                </a>
-            </li>
-            <li class="breadcrumbs-list-item">
-                <a href="#">
-                    Каталог
-                </a>
-            </li>
-            <li class="breadcrumbs-list-item">
-                <a href="#">
+            <a href="index.html" aria-label="Главная">
+            </a>
+          </li>
+          <li class="breadcrumbs-list-item">
+            <a href="#">
+              Каталог
+            </a>
+          </li>
+          <li class="breadcrumbs-list-item">
+            <a href="#">
                     Инструмент
-                </a>
-            </li>
-            <li class="breadcrumbs-list-item">
-              <a>
+            </a>
+          </li>
+          <li class="breadcrumbs-list-item">
+            <a>
                 Перфораторы
-              </a>
-            </li>
-      </ul>
+            </a>
+          </li>
+        </ul>
         <div class="wrapper-h2 container">
           <h1>Перфораторы</h1>
         </div>
-          <div class="filters-block container">
-            <div class="filters-wrapper">
-              <h2>Фильтр:</h2>
-            </div>
-            <div class="filters-wrapper-long">
+        <div class="filters-block container">
+          <div class="filters-wrapper">
+            <h2>Фильтр:</h2>
+          </div>
+          <div class="filters-wrapper-long">
             <h2>Сортировка:</h2>
-          <ul class="sort-list">
+            <ul class="sort-list">
               <li class="sort-list-item active-item">
                   <a href="#">
                       По цене
@@ -156,95 +160,96 @@
                       По функционалу
                   </a>
               </li>
-              <div clas="sort-list-buttons">
-                <button class="sort-list-button active-button" type="button" aria-label="Вверх">
-                  <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.66241 0L11.1624 10L0.162415 10" fill="black"/>
-                  </svg>
-                </button>
-                <button class="sort-list-button" type="button" aria-label="Вниз">
-                  <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.66241 10L0.162415 0H11.1624" fill="black"/>
-                  </svg>
-                </button>
-              </div>
             </ul>
+            <div class="sort-list-buttons">
+              <button class="sort-list-button active-button" type="button" aria-label="Вверх">
+                <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.66241 0L11.1624 10L0.162415 10" fill="black"/>
+                </svg>
+              </button>
+              <button class="sort-list-button" type="button" aria-label="Вниз">
+                <svg aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.66241 10L0.162415 0H11.1624" fill="black"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="filters-goods-wrapper container">
+        </div>
+      <div class="filters-goods-wrapper container">
           <section class="filters">
+            <h2 class="visually-hidden">Фильтры</h2>
             <form class="filters-form" target="_blank" method="get" action="https://echo.htmlacademy.ru/">
-                <fieldset class="first-fieldset">
-                    <legend>
+              <fieldset class="first-fieldset">
+                <legend>
                         Цена:
-                    </legend>
-                    <div class="range-filter">
-                    <div class="price-range">
-                      <div class="range-controls">
-                        <div class="scale">
+                </legend>
+                <div class="range-filter">
+                  <div class="price-range">
+                    <div class="range-controls">
+                      <div class="scale">
                         <div class="bar" style="width: 90%; margin-left: 0%"></div>
                       </div>
-                        <div class="toggle toggle-min" tabindex="0" style="left: 8%">
-                        </div>
-                        <div class="toggle toggle-max" tabindex="0" style="left: 73%">
-                        </div>
+                      <div class="toggle toggle-min" tabindex="0" style="left: 8%">
                     </div>
+                      <div class="toggle toggle-max" tabindex="0" style="left: 73%">
+                      </div>
                     </div>
-                    <div class="price-controls">
+                  </div>
+                  <div class="price-controls">
                     <label class="min-price">
-                      <input class="price" type="number" placeholder="0"> &mdash; </label>
-                      <label class="max-price">
+                      <input class="price" type="number" placeholder="0"> &mdash; 
+                    </label>
+                    <label class="max-price">
                       <input class="price" type="number" placeholder="30000">
                     </label>
-                    </div>
-                    </div>
-                </fieldset>
-                <fieldset class="second-fieldset">
-                    <legend>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="second-fieldset">
+                <legend>
                         Производители:
-                    </legend>
-                    <ul class="brands-checkbox-list">
-                        <li class="brands-checkbox-list-item">
-                            <input class="visually-hidden brands-checkbox " type="checkbox" id="filter-bosch" name="bosch" checked>
-                            <label for="filter-bosch">Bosch</label>
-                        </li>
-                        <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-interscol" name="interscol">
-                            <label for="filter-interscol">Интерскол</label>
-                        </li>
-                        <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-makita" name="makita" checked>
-                            <label for="filter-makita">Makita</label>
-                        </li>
-                        <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-dewalt" name="dewalt">
-                            <label for="filter-dewalt">Dewalt</label>
-                        </li>
-                        <li class="brands-checkbox-list-item">
-                            <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-hitachi" name="hitachi">
-                            <label for="filter-hitachi">Hitachi</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset class="third-fieldset">
-                    <legend>
+                </legend>
+                <ul class="brands-checkbox-list">
+                  <li class="brands-checkbox-list-item">
+                    <input class="visually-hidden brands-checkbox " type="checkbox" id="filter-bosch" name="bosch" checked>
+                      <label for="filter-bosch">Bosch</label>
+                  </li>
+                  <li class="brands-checkbox-list-item">
+                    <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-interscol" name="interscol">
+                      <label for="filter-interscol">Интерскол</label>
+                  </li>
+                  <li class="brands-checkbox-list-item">
+                    <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-makita" name="makita" checked>
+                      <label for="filter-makita">Makita</label>
+                  </li>
+                  <li class="brands-checkbox-list-item">
+                    <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-dewalt" name="dewalt">
+                      <label for="filter-dewalt">Dewalt</label>
+                  </li>
+                  <li class="brands-checkbox-list-item">
+                    <input class="brands-checkbox visually-hidden" type="checkbox" id="filter-hitachi" name="hitachi">
+                      <label for="filter-hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="third-fieldset">
+                <legend>
                         Питание:
-                    </legend>
-                    <ul class="brands-radio-list">
-                        <li>
-                            <input class="brands-radio visually-hidden" type="radio" id="filter-batteried" name="power-group" value="batteried" checked>
-                            <label for="filter-batteried">Аккумуляторные</label>
-                        </li>
-                        <li>
-                            <input class="brands-radio visually-hidden" type="radio" id="filter-wired" name="power-group" value="wired">
-                            <label for="filter-wired">Сетевые</label>
-                        </li>
-                    </ul>
-
-                </fieldset>
-                <button class="show">
+                </legend>
+                <ul class="brands-radio-list">
+                  <li>
+                    <input class="brands-radio visually-hidden" type="radio" id="filter-batteried" name="power-group" value="batteried" checked>
+                      <label for="filter-batteried">Аккумуляторные</label>
+                  </li>
+                  <li>
+                    <input class="brands-radio visually-hidden" type="radio" id="filter-wired" name="power-group" value="wired">
+                      <label for="filter-wired">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="show">
                     Показать
-                </button>
+              </button>
             </form>
         </section>
         <section class="goods">
@@ -253,8 +258,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy"  type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -271,8 +276,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -289,8 +294,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -307,8 +312,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -327,8 +332,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -345,8 +350,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -363,8 +368,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -381,8 +386,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                 <div class="temporable-1">
@@ -399,8 +404,8 @@
               <li class="goods-list-item">
                 <div class="hidden-block">
                   <div class="purchase-buttons">
-                    <button class="accept-buy" type="button">Купить</button>
-                    <button class="to-bookmarks" type="button">В закладки</button>
+                    <a class="accept-buy" href="#">Купить</a>
+                    <a class="to-bookmarks" href="#">В закладки</a>
                   </div>
                 </div>
                   <div class="temporable-1">
@@ -415,32 +420,32 @@
                   </div>
               </li>
             </ul>
-      <ul class="page-list">
-        <li class="page-list-item active">
-          <a>1</a>
-        </li>
-        <li class="page-list-item">
-          <a href="#">2</a>
-        </li>
-        <li class="page-list-item">
-          <a href="#">3</a>
-        </li>
-        <li class="page-list-item long">
-          <a href="#">Cледующая</a>
-        </li>
-      </ul>
+            <ul class="page-list">
+              <li class="page-list-item active">
+                <a>1</a>
+              </li>
+              <li class="page-list-item">
+                <a href="#">2</a>
+              </li>
+              <li class="page-list-item">
+                <a href="#">3</a>
+              </li>
+              <li class="page-list-item long">
+                <a href="#">Cледующая</a>
+              </li>
+            </ul>
         </section>
-          </div>
-          <div class="about-perforators-wrapper">
-            <article class="about-perforators container">
-                <h2>Пара слов о перфораторах</h2>
-                <p>
+      </div>
+        <div class="about-perforators-wrapper">
+          <article class="about-perforators container">
+            <h2>Пара слов о перфораторах</h2>
+              <p>
                     Перфоратор &mdash; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
                     <br>В ассортиментном ряду есть выбор &#171;трехрежимников&#187;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-                </p>
-            </article>
-          </div>
+              </p>
+          </article>
+        </div>
       </main>
       <footer class="main-footer">
         <div class="navigation-footer">
@@ -545,17 +550,18 @@
         </div>
       </footer>
       <section class="cart-popup modal">
+        <h2 class="visually-hidden">Всплывающее окно с корзиной</h2>
         <div class="cart-popup-up">
          <p>Товар добавлен в корзину!</p>
         </div>
         <div class="cart-popup-buttons">
-<button class="open-button" type="button">Оформить заказ</button>
-<button class="continue-purchasing" type="button">Продолжить покупки</button>
+          <button class="open-button" type="button">Оформить заказ</button>
+          <button class="continue-purchasing" type="button">Продолжить покупки</button>
         </div>
         <button class="close-button-cart-popup" type="button">
           <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643" />
-        </svg>
+            <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643" />
+          </svg>
       </button>
         </section>
   </body>
