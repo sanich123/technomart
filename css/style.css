@@ -373,7 +373,7 @@ img {
 }
 
 .user-cabinet-menu {
-  display: flex; flex-wrap: wrap;
+  display: flex;
   flex-wrap: wrap;
   column-gap: 10px;
   align-items: center;
@@ -1032,33 +1032,12 @@ img {
 
 /*Карточка с товаром*/
 
-.goods-list-2 .goods-list-item:nth-child(9),
-.goods-list-2 .goods-list-item:nth-child(3),
-.goods-list-2 .goods-list-item:nth-child(4),
-.goods-list-2 .goods-list-item:nth-child(6),
-.goods-list-2 .goods-list-item:nth-child(7) {
+
+.goods-list-item {
   position: relative;
 }
 
-.goods-list-2 .goods-list-item:nth-child(9)::after,
-.goods-list-2 .goods-list-item:nth-child(3)::after,
-.goods-list-2 .goods-list-item:nth-child(4)::after,
-.goods-list-2 .goods-list-item:nth-child(6)::after,
-.goods-list-2 .goods-list-item:nth-child(7)::after {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 70px;
-  background-image: url("../img/icon/new.svg");
-  top:0;
-  right: 0;
-}
-
-.feature-list-item:nth-child(1) {
-  position: relative;
-}
-
-.feature-list-item:nth-child(1)::before {
+.new::before {
   position: absolute;
   content: "";
   width: 70px;
@@ -1066,22 +1045,8 @@ img {
   background-image: url("../img/icon/new.svg");
   top: 0;
   right: 0;
-}
-
-.goods-list .goods-list-item:nth-child(2),
-.goods-list .goods-list-item:nth-child(4) {
-  position: relative;
-}
-.goods-list .goods-list-item:nth-child(2)::after,
-.goods-list .goods-list-item:nth-child(4)::after {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 70px;
-  background-image: url("../img/icon/new.svg");
-  top:0;
-  right: 0;
-}
+  z-index: 20;
+ }
 
 /*Сервисы*/
 
@@ -1103,7 +1068,6 @@ img {
   padding-bottom: 71px;
 }
 
-
 .services-wrapper {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -1117,7 +1081,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin:0;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -1571,60 +1535,56 @@ img {
 
 /*Catalog*/
 
-.log-in {
-  display: flex; flex-wrap: wrap;
-  position: relative;
+.log-in-log-out {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  column-gap: 20px;
+  justify-content: space-around;
+
   font-size: 21px;
   line-height: 21px;
-  height: 45px;
+  min-height: 45px;
   background-color: var(--basic-white);
-  border: none;
   height: 45px;
   padding: 0;
   margin-right: -15px;
   margin-top: 4px;
-  width: 299px;
+  min-width: 299px;
 }
 
-.log-in::before {
-  content: "";
-  width: 20px;
-  height: 18px;
-  background-image: url("../img/icon/user.svg");
+.log-in {
+  color: var(--basic-black);
+  margin-top: -3px;
+}
+.log-in-svg {
+  padding-left: 5px;
+  padding-top: 3px;
+  margin-right: 15px;
+  margin-bottom: -3px;
+}
+
+.log-out-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 6px;
+}
+
+
+.log-in-svg,
+.log-out-svg {
   opacity: 0.3;
 }
 
-.log-in::after {
-  content: "";
-  width: 20px;
-  height: 18px;
-  background-image: url("../img/icon/login.svg");
-  opacity: 0.3;
-}
-
-.log-in:hover::before {
+.log-in:hover .log-in-svg,
+.log-out-svg:hover {
   opacity: 1;
 }
 
-.log-in:hover::after {
-  opacity: 1;
-}
-
-.log-in:active::before {
+.log-in:active .log-in-svg,
+.log-out-svg:active {
   opacity: 0.3;
 }
-
-.log-in:active::after {
-  opacity: 0.3;
-}
-
-.log-in:active {
-  color: var(--special-grey4);
- }
-
 .log-in-cabinet {
   position: relative;
   list-style: none;
@@ -2057,6 +2017,10 @@ img {
 .brands-radio:active + label {
   opacity: 0.3;
 }
+.brands-checkbox:disabled + label,
+.brands-radio:disabled + label {
+  opacity: 0.3;
+}
 
 .brands-checkbox-list,
 .brands-radio-list {
@@ -2199,7 +2163,8 @@ img {
 .active a {
   background: var(--basic-red);
   color: var(--basic-white);
-  border-radius: 2px;
+  border: none;
+  border-radius: 3px;
 }
 
 .about-perforators-wrapper {
