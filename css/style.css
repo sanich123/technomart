@@ -2233,7 +2233,6 @@ img {
 /*Форма обратной связи*//*Форма feedback*/
 
 .feedback {
-  position: fixed;
   display: none;
   grid-template-rows: 310px 105px;
   width: 620px;
@@ -2245,6 +2244,9 @@ img {
   background: var(--basic-white);
   }
 
+.feedback-show {
+  display: grid;
+}
 .feedback-form {
   display: grid;
   grid-template-columns: 220px 220px;
@@ -2343,6 +2345,10 @@ img {
   border-top: 7px solid var(--basic-red);
 }
 
+.modal-map-show {
+  display: block;
+}
+
 .modal-map img {
   display: block;
 }
@@ -2383,6 +2389,10 @@ img {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 100;
   left: 35px;
+}
+
+.cart-popup-show {
+  display: grid;
 }
 
 .cart-popup-buttons {
