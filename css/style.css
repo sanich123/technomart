@@ -613,6 +613,7 @@ img {
 /*Слайдер*/
 
 .slider-item {
+  display: none;
   position: relative;
   background-color: var(--basic-blue);
   width: 620px;
@@ -700,10 +701,6 @@ img {
   bottom: 95px;
   left: 305px;
   z-index: 20;
-}
-
-.slide {
-  display: none;
 }
 
 .slide-current {
