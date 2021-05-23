@@ -14,7 +14,6 @@ const button3 = document.querySelector('.services-button:nth-child(3)');
 const delivery = document.querySelector('.service-list-item:nth-child(1)');
 const garanty = document.querySelector('.service-list-item:nth-child(2)');
 const credit = document.querySelector('.service-list-item:nth-child(3)');
-console.log(garanty);
 
 button2.addEventListener('click', function(evt){
   evt.preventDefault();
@@ -61,3 +60,30 @@ slideBack.addEventListener('click', function(evt){
   slidePerforator.classList.add('slide-current');
   slideDrill.classList.remove('slide-current');
   });
+
+  const slideBack2 = document.querySelector('.two');
+  slideBack2.addEventListener('click', function(evt){
+    evt.preventDefault();
+    slidePerforator.classList.add('slide-current');
+    slideDrill.classList.remove('slide-current');
+  });
+
+const buttonForward = document.querySelector('.right');
+const buttonBack = document.querySelector('.slider-controls-button');
+
+buttonForward.addEventListener('click', function(evt){
+  evt.preventDefault();
+  slidePerforator.classList.remove('slide-current');
+  slideDrill.classList.add('slide-current');
+  buttonForward.classList.remove('current');
+  buttonBack.classList.add('current');
+  });
+
+buttonBack.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  slidePerforator.classList.add('slide-current');
+  slideDrill.classList.remove('slide-current');
+  buttonForward.classList.add('current');
+  buttonBack.classList.remove('current');
+});
+
