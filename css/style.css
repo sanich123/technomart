@@ -1,47 +1,47 @@
 /* Variables */
 
 :root {
---basic-blue: #293449;
---basic-blue2: #32425C;
---basic-red: #EE3643;
---basic-green: #63A63E;
---basic-grey: #F9F5F0;
---basic-greylight: rgba(197,197,197,0.3);
---basic-grey2: rgba(0, 0, 0, 0.0001);
---basic-orange: #FFBF47;
---basic-white: #ffffff;
---basic-black: #000000;
+  --basic-blue: #293449;
+  --basic-blue2: #32425c;
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-grey: #f9f5f0;
+  --basic-greylight: rgba(197, 197, 197, 0.3);
+  --basic-grey2: rgba(0, 0, 0, 0.0001);
+  --basic-orange: #ffbf47;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
 
---special-light-blue:#3BBCE3;
---special-pink: #DC91D8;
---special-green: #8ED78F;
---special-green2: #367315;
---special-green3: #5FBB2D;
---special-green4: #518534;
---special-blue4: #1D2739;
---special-orange:  #FFD180;
---special-orange2: #FFC047;
---special-blue2:  linear-gradient(0deg, #212A3A, #212A3A);
---special-blue3: #405069;
---special-black: #161D29;
---special-grey: rgba(169,169,169,0.3);
---special-greylight: #F1F5F7;
---special-grey2: #f3f7f9;
---special-grey3: #F7F3EC;
---special-grey4: #c5c5c5;
---special-grey5: #f2f6f8;
---special-grey6: #D7DCDE;
---special-grey7: #00ca74;
---special-grey8: #ababab;
---special-grey9: #cfcfcf;
---special-grey10: #b5b5b5;
---special-grey11: #E5E5E5;
---special-grey12: #f4f4f4;
---special-grey13: #f1f1f1;
---special-red: #CA2C37;
---special-darkred: #BA2732;
---special-brown: #EAEAEA;
---special-line-through: #a9a9a9;
+  --special-light-blue: #3bbce3;
+  --special-pink: #dc91d8;
+  --special-green: #8ed78f;
+  --special-green2: #367315;
+  --special-green3: #5fbb2d;
+  --special-green4: #518534;
+  --special-blue4: #1d2739;
+  --special-orange: #ffd180;
+  --special-orange2: #ffc047;
+  --special-blue2: linear-gradient(0deg, #212a3a, #212a3a);
+  --special-blue3: #405069;
+  --special-black: #161d29;
+  --special-grey: rgba(169, 169, 169, 0.3);
+  --special-greylight: #f1f5f7;
+  --special-grey2: #f3f7f9;
+  --special-grey3: #f7f3ec;
+  --special-grey4: #c5c5c5;
+  --special-grey5: #f2f6f8;
+  --special-grey6: #d7dcde;
+  --special-grey7: #00ca74;
+  --special-grey8: #ababab;
+  --special-grey9: #cfcfcf;
+  --special-grey10: #b5b5b5;
+  --special-grey11: #e5e5e5;
+  --special-grey12: #f4f4f4;
+  --special-grey13: #f1f1f1;
+  --special-red: #ca2c37;
+  --special-darkred: #ba2732;
+  --special-brown: #eaeaea;
+  --special-line-through: #a9a9a9;
 }
 
 a {
@@ -78,7 +78,7 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .container {
@@ -114,7 +114,7 @@ img {
   background-color: var(--basic-blue);
   font-size: 18px;
   line-height: 24px;
- }
+}
 
 .upper-navigation-wrapper {
   background: var(--basic-blue);
@@ -129,7 +129,7 @@ img {
   grid-template-columns: 220px 271px 1fr 1fr 1fr;
   margin: 0 auto;
   height: 42px;
- }
+}
 
 /*Логотип*/
 
@@ -350,7 +350,7 @@ img {
 }
 
 .contacts-phone::before {
-  content:"";
+  content: "";
   width: 19px;
   height: 19px;
   background-image: url("../img/icon/phone.svg");
@@ -401,7 +401,7 @@ img {
 }
 
 .user-cabinet-login::before {
-  content:"";
+  content: "";
   position: absolute;
   width: 20px;
   height: 17px;
@@ -599,7 +599,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .feature-list-item a:hover {
@@ -841,7 +841,6 @@ img {
   z-index: 20;
 }
 
-
 /*
 .goods-list-item:focus-within .hidden-block {
   display: flex;
@@ -910,7 +909,8 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -944,7 +944,8 @@ img {
   margin-left: 3px;
   font-size: 17px;
   line-height: 18px;
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   text-decoration-line: line-through;
@@ -975,12 +976,15 @@ img {
   height: 38px;
   border-radius: 3px;
   background-color: var(--basic-red);
-  background-image:
-  linear-gradient(225deg, var(--basic-white) 13px, transparent 13px),
-  linear-gradient(315deg, var(--basic-white) 13px, transparent 13px);
+  background-image: linear-gradient(
+      225deg,
+      var(--basic-white) 13px,
+      transparent 13px
+    ),
+    linear-gradient(315deg, var(--basic-white) 13px, transparent 13px);
   margin-left: 12px;
   margin-bottom: 10px;
- }
+}
 
 .user-cabinet {
   display: flex;
@@ -1033,7 +1037,6 @@ img {
 
 /*Карточка с товаром*/
 
-
 .goods-list-item {
   position: relative;
 }
@@ -1047,7 +1050,7 @@ img {
   top: 0;
   right: 0;
   z-index: 20;
- }
+}
 
 /*Сервисы*/
 
@@ -1068,7 +1071,6 @@ img {
 
 .services {
   padding-top: 65px;
-
 }
 
 .services-wrapper {
@@ -1090,8 +1092,8 @@ img {
 
 .services-list {
   position: relative;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   margin-left: 80px;
   margin-top: -22px;
 }
@@ -1129,7 +1131,7 @@ img {
 
 .service-list-item {
   position: relative;
-  }
+}
 
 .service-list-item:nth-child(1)::after {
   position: absolute;
@@ -1143,7 +1145,7 @@ img {
 
 .service-list-item:nth-child(2)::after {
   position: absolute;
-  content:"";
+  content: "";
   width: 389px;
   height: 283px;
   background-image: url("../img/warrant-image.png");
@@ -1153,7 +1155,7 @@ img {
 
 .service-list-item:nth-child(3)::after {
   position: absolute;
-  content:"";
+  content: "";
   width: 465px;
   height: 285px;
   background-image: url("../img/credit-image.png");
@@ -1191,7 +1193,7 @@ img {
   padding-bottom: 5px;
   background: var(--basic-blue2);
   box-shadow: 0px 1px 0px var(--basic-blue),
-  inset 0px 1px 0px var(--special-blue3);
+    inset 0px 1px 0px var(--special-blue3);
   color: var(--basic-white);
   width: 240px;
   height: 62px;
@@ -1363,11 +1365,12 @@ img {
 
 .footer-contacts-additional {
   display: grid;
-  grid-template-columns:321px 1fr;
+  grid-template-columns: 321px 1fr;
   margin-top: 14px;
 }
 
-.social-list, .footer-navigation-list,
+.social-list,
+.footer-navigation-list,
 .additional-list {
   display: flex;
   flex-wrap: wrap;
@@ -1454,7 +1457,6 @@ img {
 }
 
 .navigation-footer {
-
   background-color: var(--basic-blue2);
   height: 193px;
 }
@@ -1578,7 +1580,6 @@ img {
   padding-right: 6px;
 }
 
-
 .log-in-svg,
 .log-out-svg {
   opacity: 0.3;
@@ -1632,7 +1633,8 @@ img {
 /*Хлебные крошки*/
 
 .breadcrumbs-list {
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   flex-wrap: wrap;
   margin-top: 20px;
@@ -1678,7 +1680,7 @@ img {
 
 .breadcrumbs-list-item:nth-child(1) a::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 14px;
   height: 12px;
   background-image: url("../img/icon/home.svg");
@@ -1691,9 +1693,9 @@ img {
 }
 
 .wrapper-h2 {
- background-color: var(--special-grey5);
- padding-left: 0;
- padding-right: 0;
+  background-color: var(--special-grey5);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wrapper-h2 h1 {
@@ -1795,13 +1797,13 @@ img {
 .sort-list-item a:hover {
   opacity: 1;
   border-bottom: 1px solid var(--basic-red);
-  }
+}
 
- .active-item a {
+.active-item a {
   color: var(--basic-red);
   border: none;
   opacity: 1;
-  }
+}
 
 .sort-list-button {
   position: relative;
@@ -1858,7 +1860,6 @@ img {
   color: var(--basic-black);
 }
 
-
 .range-controls {
   position: relative;
   padding-top: 39px;
@@ -1902,7 +1903,8 @@ img {
 
 /*FILTERS*/
 
-.filters, .perforators-list {
+.filters,
+.perforators-list {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
@@ -1940,7 +1942,8 @@ img {
 
 .filters fieldset:nth-last-child {
   margin-bottom: 37px;
-  display: flex; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-transform: uppercase;
   color: var(--basic-black);
@@ -1997,7 +2000,7 @@ img {
 }
 
 .brands-radio-list label {
-   display: block;
+  display: block;
   position: relative;
   cursor: pointer;
   user-select: none;
@@ -2078,7 +2081,7 @@ img {
   width: 25px;
   height: 25px;
   background-image: url("../img/icon/radio-on.svg");
-  left:-35px;
+  left: -35px;
   top: -1px;
 }
 
@@ -2108,7 +2111,6 @@ img {
   margin-bottom: 34px;
   padding: 0;
 }
-
 
 .page-list-item a {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2180,7 +2182,7 @@ img {
   margin: 0 auto;
   background: var(--special-greylight);
   min-height: 261px;
-  }
+}
 
 .about-perforators h2 {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -2191,7 +2193,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   padding-top: 64px;
- }
+}
 
 .about-perforators p {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2227,7 +2229,7 @@ img {
   margin-top: 20px;
 }
 
-/*Форма обратной связи*//*Форма feedback*/
+/*Форма обратной связи*/ /*Форма feedback*/
 
 .feedback {
   display: none;
@@ -2239,7 +2241,7 @@ img {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   z-index: 20;
   background: var(--basic-white);
-  }
+}
 
 .feedback-show {
   display: grid;
@@ -2259,18 +2261,17 @@ img {
   padding-right: 80px;
   width: 460px;
   height: 270px;
-  }
-
+}
 
 .feedback-item:nth-child(3) {
   width: 100%;
   margin-top: 5px;
 }
 
- .feedback-item:nth-child(3) .feedback-item-input {
-   width: 460px;
-   height: 114px;
- }
+.feedback-item:nth-child(3) .feedback-item-input {
+  width: 460px;
+  height: 114px;
+}
 
 .feedback-bottom {
   display: flex;
@@ -2279,7 +2280,7 @@ img {
   justify-content: center;
   width: 620px;
   height: 112px;
-  }
+}
 
 .feedback-label {
   font-style: normal;
@@ -2323,7 +2324,7 @@ img {
 .big-button {
   width: 460px;
   height: 38px;
-  }
+}
 
 .close-button-feedback {
   position: absolute;
@@ -2331,7 +2332,7 @@ img {
   top: 13px;
   border: none;
   background: transparent;
-  }
+}
 
 /*Всплывающее окно с картой*/
 
@@ -2383,8 +2384,8 @@ img {
   display: none;
   position: fixed;
   grid-template-rows:
-  163px
-  112px;
+    163px
+    112px;
   width: 620px;
   height: 275px;
   border-top: 7px solid var(--basic-red);
@@ -2428,7 +2429,7 @@ img {
 
 .cart-popup-up p::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 66px;
   height: 66px;
   background-image: url("../img/icon/icon-mark.svg");
